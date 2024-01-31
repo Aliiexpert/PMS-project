@@ -1,0 +1,16 @@
+{
+  "db":{
+    "host":"localhost",
+    "port":4000,
+    "username":"postgres",
+    "password": "Aafaz15malik",
+    "database": "LMS",
+    "dialect" :"postgres",
+    "logging": false
+    
+},
+ 
+"jwt":{
+    "secret": "3u33BQZAw/r1Y9fobqwYLiywYjeKGd6reAkqRceNCyc="
+}
+}

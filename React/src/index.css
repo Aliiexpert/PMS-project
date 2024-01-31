@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi-Regular.woff') format('woff'),
+       url('fonts/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+/* Assuming this is your custom CSS file or within a <style> tag */
+/* Adjust specificity as needed */
+.trainee-input{
+  width:400px;
+}
+
+
+
+.css-jgls56-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+      background-color: rgb(79 70 229) !important;
+
+    color: #fff; /* Optional: If you want to change the text color */
+}
+.icon{
+      height: 32px;
+    width: 30px;
+}
+.width{
+  width:1000px
+}
+.css-11a8txn-MuiStack-root>:not(style):not(style){
+  border-radius:10px
+}
+.event-indicator {
+  background-color: #f44336; /* or any color you prefer */
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+:root {
+font-family: 'DM Sans', sans-serif;  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.padd{
+padding-left:11rem !important;
+padding-right:11rem !important;
+}
+a {
+  font-weight: 400;
+  color:white;
+  text-decoration: inherit;
+}
+
+
+.dimmed {
+    opacity: 0.5; /* You can adjust the opacity value as needed */
+    pointer-events: none; /* This ensures that the dimmed content is not clickable */
+    transition: opacity 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(-50%); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+@keyframes fadeOut {
+  
+    to {
+        opacity: 0;
+        /* transform: translateY(0); */
+    }
+}
+/* InstructorLayout.css */
+
+.fade-in {
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.fade-inn {
+  opacity: 1;
+  animation: fadeIn 0.7s ease-in-out;
+}
+.modal-container {
+    position: fixed;
+    z-index: 101;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.5s ease-in-out;
+
+}
+.modal-container-closed {
+    position: fixed;
+    z-index: 101;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 0.5s ease-in-out;
+
+}
+.loader-container {
+    border-radius: 8px; /* Rounded corners for the container */
+    padding: 10px; /* Some padding around the loader */
+      position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.width-select{
+  width:200px
+}
+.row-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Adjust the gap as per your preference */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px; /* Adjust the gap as per your preference */
+}
+.w-form{
+  width:500px
+}
+.row-item {
+  flex: 1; /* Allow items to grow and occupy equal width */
+}
+
+.loader-dot {
+    background-color: #4A46E8; /* Blue color for the dots */
+}
+
+/* Adjust the dimmed content */
+.h-screen.w-screen.flex.justify-end.dimmed:not(.modal-container) {
+    opacity: 0.5;
+    pointer-events: none; /* This ensures the dimmed content is not clickable */
+    transition: opacity 0.3s ease;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.selected{
+      background-color: rgb(99 102 241) !important;
+
+    color: #fff; /* Optional: If you want to change the text color */}
+button:hover {
+  border-color: #646cff;
+}
+body{
+  overflow-x:hidden
+}
+.notification {
+  overflow-x:auto;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  transition: opacity 0.6s ease-in-out;
+  animation: mymove 0.7s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  right: -300px; /* Adjust as needed */
+}
+/* Add this style in your CSS file or use inline styles in your React components */
+.notification-indicator {
+    position: absolute;
+    top: 32px;
+    right:103px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.hover-effect {
+  transition: background-color 0.5s ease; /* Adjust the duration and easing function as needed */
+}
+
+.hover-effect:hover {
+  background-color: #e5e5e5 ; /* Your hover background color */
+}
+
+@keyframes mymove {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    left: -200px;
+    opacity:0
+  }
+  to {
+    left: 0;
+    opacity:1
+  }
+}
+
+
+@keyframes navbar {
+  from {
+    top: -10px;
+    opacity:0
+  }
+  to {
+    top: 42px;
+    opacity:1
+  }
+}
+
+
+.navbarr {
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  transition: opacity 1s ease-in-out;
+  animation: navbar 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top:-10px
+}
+/* Styles for the dropdown */
+
+.dropdown-content {
+  position: absolute;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+color:black;
+  font-size:13px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+
+.sidebarr {
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  transition: opacity 1s ease-in-out;
+  animation: move 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  left: -200px; /* Adjust as needed */
+}
+
+.blurrr {
+  filter: blur(5px); /* Adjust the value (5px) based on your desired blur amount */
+    pointer-events: none; /* This ensures that the dimmed content is not clickable */
+    transition: opacity 2s ease-in-out; /* Optional: Add a smooth transition effect */
+  }
+.blurr {
+  filter: blur(5px); /* Adjust the value (5px) based on your desired blur amount */
+z-index:-100;
+    pointer-events: none; /* This ensures that the dimmed content is not clickable */
+    transition: opacity 2s ease-in-out; /* Optional: Add a smooth transition effect */
+  }
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
