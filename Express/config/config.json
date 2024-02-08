@@ -1,10 +1,10 @@
 {
   "db":{
     "host":"localhost",
-    "port":4000,
+    "port":5432,
     "username":"postgres",
     "password": "Aafaz15malik",
-    "database": "LMS",
+    "database": "pms",
     "dialect" :"postgres",
     "logging": false
     
